@@ -120,10 +120,6 @@
 								</jar>
 								<echo file="./target/generate-zip/run.bat"
 									append="false" message="java -jar javaccProtoViewer.jar" />
-								<mkdir dir="./target/generate-zip/src" />
-								<copy todir="./target/generate-zip/src">
-									<fileset dir="./src/view/java" />
-								</copy>
 								<mkdir dir="./target/generate-zip/proto" />
 								<copy todir="./target/generate-zip/proto">
 									<fileset dir="./src/test/config/proto2">
